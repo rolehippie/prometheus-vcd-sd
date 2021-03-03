@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus SD for vCloud Director
+After=network-online.target
+
+[Service]
+Restart=always
+User={{ prometheus_vcd_sd_owner }}
+Group={{ prometheus_vcd_sd_group }}
+EnvironmentFile=/etc/default/prometheus-vcd-sd
+ExecStart=/usr/bin/prometheus-vcd-sd server
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,57 @@
+# Standards: 0.1
+---
+# @var prometheus_vcd_sd_version:description: Version of the release to install
+prometheus_vcd_sd_version: 0.1.1
+
+# @var prometheus_vcd_sd_download:description: URL to the archive of the release to install
+prometheus_vcd_sd_download: "https://github.com/promhippie/prometheus-vcd-sd/releases/download/v{{ prometheus_vcd_sd_version }}/prometheus-vcd-sd-{{ prometheus_vcd_sd_version }}-linux-amd64"
+
+# @var prometheus_vcd_sd_owner:description: Owner of the configuration, should be the prometheus user
+prometheus_vcd_sd_owner: prometheus
+
+# @var prometheus_vcd_sd_group:description: Group of the configuration, should be the prometheus group
+prometheus_vcd_sd_group: prometheus
+
+# @var prometheus_vcd_sd_log_level:description: Only log messages with given severity
+prometheus_vcd_sd_log_level: info
+
+# @var prometheus_vcd_sd_log_pretty:description: Enable pretty messages for logging
+prometheus_vcd_sd_log_pretty: True
+
+# @var prometheus_vcd_sd_web_address:description: Address to bind the metrics server
+prometheus_vcd_sd_web_address: 127.0.0.1:9000
+
+# @var prometheus_vcd_sd_web_path:description: Path to bind the metrics server
+prometheus_vcd_sd_web_path: /metrics
+
+# @var prometheus_vcd_sd_output_file:description: Path to write the file_sd config
+prometheus_vcd_sd_output_file: /etc/prometheus/vcd.json
+
+# @var prometheus_vcd_sd_output_refresh:description: Discovery refresh interval in seconds
+prometheus_vcd_sd_output_refresh: 300
+
+# @var prometheus_vcd_sd_config_path:description: Path to vCloud Director configuration file
+prometheus_vcd_sd_credentials_file: /etc/prometheus-vcd-sd/credentials.json
+
+# @var prometheus_vcd_sd_credentials:description: List of credentials to access vCloud Director
+
+# @var prometheus_scrape_configs:example: >
+# prometheus_vcd_sd_credentials:
+#   - project: example
+#     url: https://vcd.example.com/api
+#     insecure: False
+#     username: username
+#     password: password
+#     org: DE-XX1
+#     vdc: DE-XX1-NUE-A1
+#   - project: foobar
+#     url: https://vcd.foobar.com/api
+#     insecure: True
+#     username: username
+#     password: password
+#     org: DE-YY1
+#     vdc: DE-YY1-NUE-A1
+# @end
+prometheus_vcd_sd_credentials: []
+
+...
