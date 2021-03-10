@@ -22,7 +22,6 @@
   get_url:
     url: "{{ prometheus_vcd_sd_download }}"
     dest: /usr/bin/prometheus-vcd-sd
-    remote_src: True
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
