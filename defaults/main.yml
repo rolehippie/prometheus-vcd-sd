@@ -1,7 +1,7 @@
 # Standards: 0.1
 ---
 # @var prometheus_vcd_sd_version:description: Version of the release to install
-prometheus_vcd_sd_version: 0.1.1
+prometheus_vcd_sd_version: 0.1.2
 
 # @var prometheus_vcd_sd_download:description: URL to the archive of the release to install
 prometheus_vcd_sd_download: "https://github.com/promhippie/prometheus-vcd-sd/releases/download/v{{ prometheus_vcd_sd_version }}/prometheus-vcd-sd-{{ prometheus_vcd_sd_version }}-linux-amd64"

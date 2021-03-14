@@ -157,7 +157,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-prometheus_vcd_sd_version: 0.1.1
+prometheus_vcd_sd_version: 0.1.2
 ```
 
 ### prometheus_vcd_sd_web_address
