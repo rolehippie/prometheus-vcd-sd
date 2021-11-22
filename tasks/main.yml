@@ -5,7 +5,7 @@
   failed_when: False
   changed_when: False
   check_mode: False
-  command: /usr/bin/prometheus-vcd-sd --version
+  shell: /usr/bin/prometheus-vcd-sd --version 2>&1
   tags:
     - prometheus-vcd-sd
 
