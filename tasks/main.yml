@@ -33,6 +33,7 @@
     path: "{{ prometheus_vcd_sd_credentials_file | dirname }}"
     owner: "{{ prometheus_vcd_sd_owner }}"
     group: "{{ prometheus_vcd_sd_group }}"
+    mode: u=rwx,g=rx,o=rx
     state: directory
   tags:
     - prometheus-vcd-sd
@@ -54,6 +55,7 @@
     path: "{{ prometheus_vcd_sd_output_file | dirname }}"
     owner: "{{ prometheus_vcd_sd_owner }}"
     group: "{{ prometheus_vcd_sd_group }}"
+    mode: u=rwx,g=rx,o=rx
     state: directory
   tags:
     - prometheus-vcd-sd
@@ -75,6 +77,9 @@
   template:
     src: default.j2
     dest: /etc/default/prometheus-vcd-sd
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - prometheus-vcd-sd
 
@@ -84,6 +89,9 @@
   template:
     src: service.j2
     dest: /etc/systemd/system/prometheus-vcd-sd.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - prometheus-vcd-sd
 
