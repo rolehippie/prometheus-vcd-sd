@@ -3,10 +3,11 @@
 # @meta author:value: [Thomas Boerger](https://github.com/tboerger)
 # @meta description: >
 # [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/prometheus-vcd-sd)
-# [![Testing Build](https://github.com/rolehippie/prometheus-vcd-sd/workflows/testing/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions?query=workflow%3Atesting)
-# [![Readme Build](https://github.com/rolehippie/prometheus-vcd-sd/workflows/readme/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions?query=workflow%3Areadme)
-# [![Galaxy Build](https://github.com/rolehippie/prometheus-vcd-sd/workflows/galaxy/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions?query=workflow%3Agalaxy)
+# [![General Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml)
+# [![Readme Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/readme.yml)
+# [![Galaxy Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/galaxy.yml)
 # [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/prometheus-vcd-sd)](https://github.com/rolehippie/prometheus-vcd-sd/blob/master/LICENSE)
+# [![Ansible Role](https://img.shields.io/ansible/role/55297)](https://galaxy.ansible.com/rolehippie/prometheus_vcd_sd)
 #
 # Ansible role to install and configure a Prometheus vCloud service discovery.
 #
@@ -18,17 +19,18 @@
 # [rolehippie.docker](https://github.com/rolehippie/docker)
 # @end
 galaxy_info:
-  role_name: prometheus-vcd-sd
+  role_name: prometheus_vcd_sd
   namespace: rolehippie
   author: Thomas Boerger
   description: Ansible role to install and configure a Prometheus vCloud service discovery
   license: Apache-2.0
-  min_ansible_version: 2.10
+  min_ansible_version: "2.10"
   platforms:
     - name: Ubuntu
       versions:
         - bionic
         - focal
+        - jammy
   galaxy_tags:
     - prometheus
     - service
