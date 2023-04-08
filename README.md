@@ -1,6 +1,11 @@
 # prometheus-vcd-sd
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/prometheus-vcd-sd) [![General Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml) [![Readme Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/readme.yml) [![Galaxy Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/galaxy.yml) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/prometheus-vcd-sd)](https://github.com/rolehippie/prometheus-vcd-sd/blob/master/LICENSE) [![Ansible Role](https://img.shields.io/ansible/role/55297)](https://galaxy.ansible.com/rolehippie/prometheus_vcd_sd)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&amp;logoColor=white)](https://github.com/rolehippie/prometheus-vcd-sd)
+[![General Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml)
+[![Readme Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/readme.yml)
+[![Galaxy Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/galaxy.yml)
+[![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/prometheus-vcd-sd)](https://github.com/rolehippie/prometheus-vcd-sd/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/badge/role-rolehippie.prometheus-vcd-sd-blue)](https://galaxy.ansible.com/rolehippie/prometheus_vcd_sd)
 
 Ansible role to install and configure a Prometheus vCloud service discovery.
 
