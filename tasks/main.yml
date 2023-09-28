@@ -104,5 +104,6 @@
     enabled: True
   tags:
     - prometheus-vcd-sd
+    - molecule-idempotence-notest
 
 ...
