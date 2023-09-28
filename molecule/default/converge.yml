@@ -2,6 +2,9 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    prometheus_vcd_sd_owner: nobody
+    prometheus_vcd_sd_group: nogroup
   roles:
     - role: rolehippie.prometheus_vcd_sd
 
