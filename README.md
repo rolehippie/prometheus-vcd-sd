@@ -191,6 +191,8 @@ prometheus_vcd_sd_web_path: /metrics
 
 ## Discovered Tags
 
+**_molecule-idempotence-notest_**
+
 **_prometheus-vcd-sd_**
 
 
