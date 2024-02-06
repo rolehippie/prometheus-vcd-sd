@@ -198,7 +198,7 @@ prometheus_vcd_sd_web_path: /metrics
 
 ## Dependencies
 
-- [rolehippie.docker](https://github.com/rolehippie/docker)
+- None
 
 ## License
 
