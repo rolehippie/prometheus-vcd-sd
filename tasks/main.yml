@@ -1,16 +1,15 @@
-# Standards: 1.2
 ---
 - name: Check existing install
   register: prometheus_vcd_sd_version_check
   failed_when: False
   changed_when: False
   check_mode: False
-  shell: /usr/bin/prometheus-vcd-sd --version 2>&1
+  ansible.builtin.shell: /usr/bin/prometheus-vcd-sd --version 2>&1
   tags:
     - prometheus-vcd-sd
 
 - name: Fact version change
-  set_fact:
+  ansible.builtin.set_fact:
     prometheus_vcd_sd_version_changed: "{{ prometheus_vcd_sd_version_check.rc != 0 or (prometheus_vcd_sd_version_check.stdout_lines is defined and prometheus_vcd_sd_version not in prometheus_vcd_sd_version_check.stdout_lines[0]) | bool }}"
   tags:
     - prometheus-vcd-sd
@@ -19,7 +18,7 @@
   when: prometheus_vcd_sd_version_changed
   notify:
     - Restart prometheus-vcd-sd
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ prometheus_vcd_sd_download }}"
     dest: /usr/bin/prometheus-vcd-sd
     owner: root
@@ -29,7 +28,7 @@
     - prometheus-vcd-sd
 
 - name: Create credentials directory
-  file:
+  ansible.builtin.file:
     path: "{{ prometheus_vcd_sd_credentials_file | dirname }}"
     owner: "{{ prometheus_vcd_sd_owner }}"
     group: "{{ prometheus_vcd_sd_group }}"
@@ -41,7 +40,7 @@
 - name: Write credentials config
   notify:
     - Restart prometheus-vcd-sd
-  template:
+  ansible.builtin.template:
     src: config.j2
     dest: "{{ prometheus_vcd_sd_credentials_file }}"
     owner: "{{ prometheus_vcd_sd_owner }}"
@@ -51,7 +50,7 @@
     - prometheus-vcd-sd
 
 - name: Create output directory
-  file:
+  ansible.builtin.file:
     path: "{{ prometheus_vcd_sd_output_file | dirname }}"
     owner: "{{ prometheus_vcd_sd_owner }}"
     group: "{{ prometheus_vcd_sd_group }}"
@@ -61,7 +60,7 @@
     - prometheus-vcd-sd
 
 - name: Create output config
-  copy:
+  ansible.builtin.copy:
     content: "{}"
     dest: "{{ prometheus_vcd_sd_output_file }}"
     force: False
@@ -74,7 +73,7 @@
 - name: Write default config
   notify:
     - Restart prometheus-vcd-sd
-  template:
+  ansible.builtin.template:
     src: default.j2
     dest: /etc/default/prometheus-vcd-sd
     owner: root
@@ -86,7 +85,7 @@
 - name: Write service file
   notify:
     - Restart prometheus-vcd-sd
-  template:
+  ansible.builtin.template:
     src: service.j2
     dest: /etc/systemd/system/prometheus-vcd-sd.service
     owner: root
@@ -96,7 +95,7 @@
     - prometheus-vcd-sd
 
 - name: Start prometheus-vcd-sd service
-  systemd:
+  ansible.builtin.systemd:
     name: prometheus-vcd-sd
     state: started
     daemon_reload: True
