@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/prometheus-vcd-sd/compare/v1.0.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([d87285b](https://github.com/rolehippie/prometheus-vcd-sd/commit/d87285bb05e58563bb79b726afea49be0490bcaf))
+* used full qualified collection names ([244b0fc](https://github.com/rolehippie/prometheus-vcd-sd/commit/244b0fcd8912236d13819d48a0663f191a297cc6))
+
 ## 1.0.0 (2023-01-05)
 
 
