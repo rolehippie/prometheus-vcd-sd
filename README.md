@@ -1,4 +1,4 @@
-# prometheus-vcd-sd
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/prometheus-vcd-sd)
 [![General Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml)
@@ -95,8 +95,10 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-prometheus_vcd_sd_download: https://github.com/promhippie/prometheus-vcd-sd/releases/download/v{{
-  prometheus_vcd_sd_version }}/prometheus-vcd-sd-{{ prometheus_vcd_sd_version }}-linux-amd64
+prometheus_vcd_sd_download: 
+  https://github.com/promhippie/prometheus-vcd-sd/releases/download/v{{ 
+  prometheus_vcd_sd_version }}/prometheus-vcd-sd-{{ prometheus_vcd_sd_version 
+  }}-linux-amd64
 ```
 
 ### prometheus_vcd_sd_group
@@ -194,7 +196,6 @@ prometheus_vcd_sd_web_path: /metrics
 **_molecule-idempotence-notest_**
 
 **_prometheus-vcd-sd_**
-
 
 ## Dependencies
 
