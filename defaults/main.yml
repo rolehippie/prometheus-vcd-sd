@@ -15,7 +15,7 @@ prometheus_vcd_sd_group: prometheus
 prometheus_vcd_sd_log_level: info
 
 # @var prometheus_vcd_sd_log_pretty:description: Enable pretty messages for logging
-prometheus_vcd_sd_log_pretty: True
+prometheus_vcd_sd_log_pretty: true
 
 # @var prometheus_vcd_sd_web_address:description: Address to bind the metrics server
 prometheus_vcd_sd_web_address: 127.0.0.1:9000
@@ -38,14 +38,14 @@ prometheus_vcd_sd_credentials_file: /etc/prometheus-vcd-sd/credentials.json
 # prometheus_vcd_sd_credentials:
 #   - project: example
 #     url: https://vcd.example.com/api
-#     insecure: False
+#     insecure: false
 #     username: username
 #     password: password
 #     org: DE-XX1
 #     vdc: DE-XX1-NUE-A1
 #   - project: foobar
 #     url: https://vcd.foobar.com/api
-#     insecure: True
+#     insecure: true
 #     username: username
 #     password: password
 #     org: DE-YY1

@@ -1,4 +1,4 @@
-# workspace
+# prometheus-vcd-sd
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/prometheus-vcd-sd)
 [![General Workflow](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/prometheus-vcd-sd/actions/workflows/general.yml)
@@ -52,14 +52,14 @@ Building and improving this Ansible role have been sponsored by my current and p
 prometheus_vcd_sd_credentials:
   - project: example
     url: https://vcd.example.com/api
-    insecure: False
+    insecure: false
     username: username
     password: password
     org: DE-XX1
     vdc: DE-XX1-NUE-A1
   - project: foobar
     url: https://vcd.foobar.com/api
-    insecure: True
+    insecure: true
     username: username
     password: password
     org: DE-YY1

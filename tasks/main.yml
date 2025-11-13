@@ -1,9 +1,9 @@
 ---
 - name: Check existing install
   register: prometheus_vcd_sd_version_check
-  failed_when: False
-  changed_when: False
-  check_mode: False
+  failed_when: false
+  changed_when: false
+  check_mode: false
   ansible.builtin.shell: /usr/bin/prometheus-vcd-sd --version 2>&1
   tags:
     - prometheus-vcd-sd
@@ -63,7 +63,7 @@
   ansible.builtin.copy:
     content: "{}"
     dest: "{{ prometheus_vcd_sd_output_file }}"
-    force: False
+    force: false
     owner: "{{ prometheus_vcd_sd_owner }}"
     group: "{{ prometheus_vcd_sd_group }}"
     mode: u=rw,g=rw,o=
@@ -98,9 +98,9 @@
   ansible.builtin.systemd:
     name: prometheus-vcd-sd
     state: started
-    daemon_reload: True
-    masked: False
-    enabled: True
+    daemon_reload: true
+    masked: false
+    enabled: true
   tags:
     - prometheus-vcd-sd
     - molecule-idempotence-notest

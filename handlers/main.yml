@@ -3,6 +3,6 @@
   ansible.builtin.systemd:
     name: prometheus-vcd-sd
     state: restarted
-    daemon_reload: yes
+    daemon_reload: true
 
 ...
