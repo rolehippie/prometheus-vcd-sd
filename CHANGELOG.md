@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/prometheus-vcd-sd/compare/v2.0.0...v2.1.0) (2025-11-17)
+
+
+### Features
+
+* apply new repo structure and update linting ([adeba21](https://github.com/rolehippie/prometheus-vcd-sd/commit/adeba2193c60e81227188163ed46aff89671681d))
+
 ## [2.0.0](https://github.com/rolehippie/prometheus-vcd-sd/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
