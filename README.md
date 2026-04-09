@@ -95,10 +95,7 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-prometheus_vcd_sd_download: 
-  https://github.com/promhippie/prometheus-vcd-sd/releases/download/v{{ 
-  prometheus_vcd_sd_version }}/prometheus-vcd-sd-{{ prometheus_vcd_sd_version 
-  }}-linux-amd64
+prometheus_vcd_sd_download: https://github.com/promhippie/prometheus-vcd-sd/releases/download/v{{ prometheus_vcd_sd_version }}/prometheus-vcd-sd-{{ prometheus_vcd_sd_version }}-linux-amd64
 ```
 
 ### prometheus_vcd_sd_group
