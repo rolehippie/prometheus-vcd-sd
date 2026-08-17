@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/prometheus-vcd-sd/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#62](https://github.com/rolehippie/prometheus-vcd-sd/issues/62)) ([f4f478b](https://github.com/rolehippie/prometheus-vcd-sd/commit/f4f478bd94c69546082cee1d3b789fd4c55fb932))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#63](https://github.com/rolehippie/prometheus-vcd-sd/issues/63)) ([770c407](https://github.com/rolehippie/prometheus-vcd-sd/commit/770c407d6a52d949277bfb0f07c53f5d85b595d0))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#60](https://github.com/rolehippie/prometheus-vcd-sd/issues/60)) ([a9f6b70](https://github.com/rolehippie/prometheus-vcd-sd/commit/a9f6b70d38f5ef634957e15e83909f2f1abd01d4))
+* **patch:** update dependency pre-commit to v4.6.2 ([#61](https://github.com/rolehippie/prometheus-vcd-sd/issues/61)) ([7b2de98](https://github.com/rolehippie/prometheus-vcd-sd/commit/7b2de98f86e0f424b3ef2a37120050c26325bb94))
+
 ## [2.3.0](https://github.com/rolehippie/prometheus-vcd-sd/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
