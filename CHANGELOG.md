@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.1](https://github.com/rolehippie/prometheus-vcd-sd/compare/v2.4.0...v2.4.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#64](https://github.com/rolehippie/prometheus-vcd-sd/issues/64)) ([db61416](https://github.com/rolehippie/prometheus-vcd-sd/commit/db61416c3d9d1b9bc7a22dbb529bdab2992fd2cf))
+
 ## [2.4.0](https://github.com/rolehippie/prometheus-vcd-sd/compare/v2.3.0...v2.4.0) (2026-08-17)
 
 ### Dependencies
